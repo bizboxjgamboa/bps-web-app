@@ -55,7 +55,6 @@ Before working on this project, make sure you have the following Visual Studio C
 
 - [Prettier - Code Formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-- [TypeScript Next](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-next)
 - [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens)
 
 You can install them manually or run:
