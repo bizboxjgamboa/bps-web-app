@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode", // Prettier for code formatting
+    "dbaeumer.vscode-eslint", // ESLint for linting
+    "ms-vscode.vscode-typescript-next", // TypeScript support
+    "usernamehw.errorlens" // ErrorLens for highlighting errors
+  ]
+}
