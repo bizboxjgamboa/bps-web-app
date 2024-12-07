@@ -64,8 +64,19 @@ You can install them manually or run:
 npm run setup
 ```
 
-Since this app dev dependency has prettier and eslint,
-pre-commit hooks like "lefthook" and "husky" is still in consideration.
-For now before pushing run:
-npm run format
-npm run lint
+### **Code Quality and Pre-Commit Considerations**
+
+This application already includes **Prettier** and **ESLint** as dev dependencies to ensure consistent code formatting and adherence to linting rules. While pre-commit hooks (e.g., **Lefthook** or **Husky**) are under consideration for automation, the following steps should be followed manually before pushing changes:
+
+#### **Pre-Commit Steps**
+
+1. **Format Code**  
+   Use Prettier to format the codebase:
+   ```bash
+   npm run format
+   ```
+2. **Lint Code**  
+   Use ESLint to lint the codebase:
+   ```bash
+   npm run lint
+   ```
