@@ -1,7 +1,8 @@
+import {PageNotFound, X} from '@components/index';
+import Dashboard from '@profiling/dashboard';
+import App from 'App';
+import TestingParams from 'features/testing/Testing';
 import {createBrowserRouter} from 'react-router';
-import TestingParams from '../../features/testing/Testing';
-import PageNotFound from '../../shared/components/PageNotFound';
-import App from '../App';
 
 export const router = createBrowserRouter([
 	{
@@ -18,5 +19,13 @@ export const router = createBrowserRouter([
 	{
 		path: '/testing/:testingId',
 		element: <TestingParams />,
+	},
+	{
+		path: '/profiling/dashboard',
+		element: <Dashboard />,
+	},
+	{
+		path: '/x',
+		element: <X />,
 	},
 ]);

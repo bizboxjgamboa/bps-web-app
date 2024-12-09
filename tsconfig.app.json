@@ -20,7 +20,30 @@
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
 		"noFallthroughCasesInSwitch": true,
-		"noUncheckedSideEffectImports": true
+		"noUncheckedSideEffectImports": true,
+
+		/* Path */
+		"baseUrl": ".",
+		"paths": {
+			/* Common */
+			"@assets/*": ["./src/common/assets/*"],
+			"@components/*": ["./src/common/components/*"],
+			"@routes/*": ["./src/common/routes/*"],
+			"@themes/*": ["./src/common/themes/*"],
+			"@utils/*": ["./src/common/utils/*"],
+			// /* Features */
+			"@about/*": ["./src/features/about/*"],
+			"@account/*": ["./src/features/account/*"],
+			"@clients/*": ["./src/features/clients/*"],
+			"@fhis/*": ["./src/features/fhis/*"],
+			"@home/*": ["./src/features/home/*"],
+			"@products/*": ["./src/features/products/*"],
+			"@profiling/*": ["./src/features/profiling/*"],
+			"@queueing/*": ["./src/features/queueing/*"],
+			"@testing/*": ["./src/features/testing/*"],
+			"@users/*": ["./src/features/users/*"],
+			"*": ["./src/*"]
+		}
 	},
 	"include": ["src"]
 }

@@ -1,7 +1,7 @@
 import {NavLink, Outlet} from 'react-router';
 import './reset.css';
 
-function App() {
+const App: React.FC = () => {
 	return (
 		<>
 			<h1>Header</h1>
@@ -17,6 +17,6 @@ function App() {
 			<Outlet />
 		</>
 	);
-}
+};
 
 export default App;
