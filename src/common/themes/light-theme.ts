@@ -2,6 +2,9 @@ import {createTheme} from '@mui/material/styles';
 import {palettes} from './palettes';
 
 export const lightTheme = createTheme({
+	typography: {
+		fontFamily: 'Poppins, Arial, sans-serif',
+	},
 	palette: {
 		mode: 'light',
 		primary: {main: palettes.$primaryColor},

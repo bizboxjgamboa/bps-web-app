@@ -1,8 +1,8 @@
-import {PageNotFound, X} from '@components/index';
-import Dashboard from '@profiling/dashboard';
+import {PageNotFound} from '@components/index';
 import App from 'App';
-import TestingParams from 'features/testing/Testing';
 import {createBrowserRouter} from 'react-router';
+
+export const ROUTES_WITHOUT_APPBAR = new Set(['/', '/about']);
 
 export const router = createBrowserRouter([
 	{
@@ -14,18 +14,10 @@ export const router = createBrowserRouter([
 				path: 'about',
 				element: <div>about</div>,
 			},
+			{
+				path: 'testing',
+				element: <div>no appbar</div>,
+			},
 		],
-	},
-	{
-		path: '/testing/:testingId',
-		element: <TestingParams />,
-	},
-	{
-		path: '/profiling/dashboard',
-		element: <Dashboard />,
-	},
-	{
-		path: '/x',
-		element: <X />,
 	},
 ]);
