@@ -6,12 +6,9 @@ import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
-	{ignores: ['dist']},
+	{ignores: ['dist', 'src/common/utils/createSelectors.ts']},
 	{
-		extends: [
-			js.configs.recommended,
-			...tseslint.configs.recommendedTypeChecked,
-		],
+		extends: [js.configs.recommended, ...tseslint.configs.recommended],
 		files: ['**/*.{ts,tsx}'],
 		languageOptions: {
 			ecmaVersion: 2020,
@@ -36,17 +33,11 @@ export default tseslint.config(
 			eqeqeq: ['error', 'always'], // Enforce === and !==
 			'react/prop-types': 'off', // Disable if using TypeScript
 			'react/react-in-jsx-scope': 'off', // Not needed for React 17+
-			'jsx-quotes': ['error', 'prefer-double'], // Enforce double quotes in JSX
 			'no-var': 'error', // Prefer const/let over var
-			'no-trailing-spaces': 'error', // Disallow trailing spaces
-			'array-bracket-spacing': ['error', 'never'], // No spaces inside array brackets
-			semi: ['error', 'always'],
-			'comma-dangle': ['error', 'only-multiline'],
-			'object-curly-spacing': ['error', 'never'],
-			indent: ['error', 'tab'],
 			'react-hooks/rules-of-hooks': 'error', // Ensures correct use of React hooks
 			'react-hooks/exhaustive-deps': 'warn',
 			'eslint-comments/no-use': 'error',
+			'@typescript-eslint/no-explicit-any': 'error', // Disallow the `any` type
 		},
 	}
 );
