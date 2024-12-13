@@ -1,6 +1,6 @@
 import MuiAppBar, {AppBarProps as MuiAppBarProps} from '@mui/material/AppBar';
 import {styled} from '@mui/material/styles';
-import {mainDrawerWidth} from './MainDrawer';
+import {mainDrawerWidth} from './MainDrawer/MainDrawer';
 
 interface AppBarProps extends MuiAppBarProps {
 	open?: boolean;

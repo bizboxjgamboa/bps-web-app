@@ -1,12 +1,11 @@
 import {PageNotFound} from '@components/index';
 import Home from '@home/index';
+import Users from '@users/index';
 import App from 'App';
 import MainLayout from 'common/layouts/MainLayout';
 import {createBrowserRouter} from 'react-router';
 import {AuthLayout} from './AuthLayout';
 import ProtectedRoute from './ProtectedRoute';
-
-export const SCROLLABLE_ROUTES = new Set(['/', '/about']);
 
 export const router = createBrowserRouter([
 	{
@@ -49,12 +48,16 @@ export const router = createBrowserRouter([
 						element: <Home />,
 					},
 					{
+						path: 'users',
+						element: <Users />,
+					},
+					{
 						path: 'about',
-						element: <div>about</div>, // Example protected route
+						element: <div>about</div>,
 					},
 					{
 						path: 'testing',
-						element: <div>with appbar</div>, // Example protected route
+						element: <div>with appbar</div>,
 					},
 				],
 			},

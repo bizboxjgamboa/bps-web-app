@@ -1,7 +1,7 @@
 import MuiDrawer from '@mui/material/Drawer';
 import {CSSObject, styled, Theme} from '@mui/material/styles';
 
-export const mainDrawerWidth = 240;
+export const mainDrawerWidth = 300;
 
 const openedMixin = (theme: Theme): CSSObject => ({
 	width: mainDrawerWidth,
