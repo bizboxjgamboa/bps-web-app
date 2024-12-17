@@ -1,4 +1,4 @@
-import KeyboardArrowDown from '@mui/icons-material/KeyboardArrowDown';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import {FormControl} from '@mui/material';
 import MenuItem from '@mui/material/MenuItem';
 import Select, {SelectChangeEvent} from '@mui/material/Select';
@@ -37,7 +37,7 @@ const MainAppBarSelectFacility: React.FC = () => {
 						color: 'white',
 					},
 				}}
-				IconComponent={KeyboardArrowDown}
+				IconComponent={KeyboardArrowDownIcon}
 			>
 				<MenuItem value={1}>First</MenuItem>
 				<MenuItem value={20}>Twenty</MenuItem>

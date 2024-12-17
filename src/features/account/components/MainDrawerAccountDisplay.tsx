@@ -49,12 +49,10 @@ const MainDrawerAccountDisplay: React.FC<MainDrawerAccountDisplayProps> = ({
 							primary="John Gamboa"
 							secondary="Admin"
 							sx={{
-								'& .MuiListItemText-root': {
-									color: 'primary.main',
-								},
 								'& .MuiListItemText-primary': {
 									whiteSpace: 'normal',
 									wordWrap: 'break-word',
+									color: 'primary.main',
 								},
 								'& .MuiListItemText-secondary': {
 									fontSize: '.65rem',

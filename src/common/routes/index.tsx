@@ -1,5 +1,6 @@
 import {PageNotFound} from '@components/index';
 import Home from '@home/index';
+import Testing from '@testing/index';
 import Users from '@users/index';
 import App from 'App';
 import MainLayout from 'common/layouts/MainLayout';
@@ -57,7 +58,7 @@ export const router = createBrowserRouter([
 					},
 					{
 						path: 'testing',
-						element: <div>with appbar</div>,
+						element: <Testing />,
 					},
 				],
 			},

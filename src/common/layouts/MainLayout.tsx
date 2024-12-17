@@ -4,7 +4,7 @@ import MainAppBarSelectFacility from '@clients/components/MainAppBarSelectFacili
 import MainAppBar from '@components/app/MainAppBar';
 import MainDrawer from '@components/app/MainDrawer/MainDrawer';
 import MainDrawerHeader from '@components/app/MainDrawer/MainDrawerHeader';
-import Start from '@mui/icons-material/Start';
+import StartIcon from '@mui/icons-material/Start';
 import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
@@ -57,7 +57,7 @@ const MainLayout: React.FC = () => {
 							edge="start"
 							sx={[{marginRight: 5}, isDrawerOpen && {display: 'none'}]}
 						>
-							<Start />
+							<StartIcon />
 						</IconButton>
 						<MainAppBarSelectFacility />
 					</Toolbar>
@@ -97,7 +97,7 @@ const MainLayout: React.FC = () => {
 								isDrawerOpen && {transform: 'rotate(180deg)'},
 							]}
 						>
-							<Start />
+							<StartIcon />
 						</IconButton>
 					</MainDrawerHeader>
 					<Divider />
